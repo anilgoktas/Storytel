@@ -1,0 +1,14 @@
+sources:
+  include:
+    - ./../Storytel
+templates:
+  - ./../Pods/SwiftyMocky/Sources/SwiftyMocky
+output:
+  ./
+args:
+  testable:
+    - Storytel
+  import:
+    - SwiftyJSON
+    - os.log
+    - Combine

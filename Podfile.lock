@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (5.4.3)
+  - iOSSnapshotTestCase (6.2.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.2.0)
+  - iOSSnapshotTestCase/Core (6.2.0)
+  - iOSSnapshotTestCase/SwiftSupport (6.2.0):
+    - iOSSnapshotTestCase/Core
+  - libwebp (1.2.0):
+    - libwebp/demux (= 1.2.0)
+    - libwebp/mux (= 1.2.0)
+    - libwebp/webp (= 1.2.0)
+  - libwebp/demux (1.2.0):
+    - libwebp/webp
+  - libwebp/mux (1.2.0):
+    - libwebp/demux
+  - libwebp/webp (1.2.0)
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/WebP (4.4.8):
+    - libwebp (< 2.0, >= 0.5)
+    - SDWebImage/Core
+  - Sourcery (1.0.3)
+  - SwiftyJSON (5.0.1)
+  - SwiftyMocky (4.0.4):
+    - Sourcery (~> 1.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - iOSSnapshotTestCase
+  - R.swift
+  - SDWebImage/WebP
+  - SwiftyJSON
+  - SwiftyMocky
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - iOSSnapshotTestCase
+    - libwebp
+    - R.swift
+    - R.swift.Library
+    - SDWebImage
+    - Sourcery
+    - SwiftyJSON
+    - SwiftyMocky
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
+  libwebp: e90b9c01d99205d03b6bb8f2c8c415e5a4ef66f0
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  Sourcery: 70a6048014bd4f37ea80e6bd4354d47bf3b760e1
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SwiftyMocky: 1fb3ceca9ded134dad4da58a0f20023d7f685ccf
+
+PODFILE CHECKSUM: 1a2a79c53dcad995f28b6a91b73c9114a9635440
+
+COCOAPODS: 1.10.1
