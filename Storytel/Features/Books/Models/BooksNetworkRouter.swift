@@ -21,7 +21,7 @@ final class BooksNetworkRouter: BooksNetworkRouting {
     
     // MARK: - Properties
     
-    private var session: NetworkSession { Current.network }
+    private var network: NetworkSession { Current.network }
     
 }
 
@@ -34,7 +34,7 @@ extension BooksNetworkRouter {
             let query: String
             let pageToken: String?
             
-            var baseURL: URL { Config.Endpoint.baseURL.appendingPathComponent("search") }
+            var baseURL: URL { Config.Endpoint.baseURL().appendingPathComponent("search") }
             var method: HTTPMethod { .get }
             var parameterEncoding: NetworkParameterEncoding { NetworkParameterEncoder.url }
             
@@ -65,7 +65,7 @@ extension BooksNetworkRouter {
         query: String,
         pageToken: String?
     ) -> AnyPublisher<Search.Response, Error> {
-        session.perform(Search.self, request: .init(query: query, pageToken: pageToken))
+        network.perform(Search.self, request: .init(query: query, pageToken: pageToken))
     }
     
 }

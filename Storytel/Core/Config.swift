@@ -19,7 +19,13 @@ enum Config {
         #else
         static let urlString = "https://api.storytel.net"
         #endif
-        static let baseURL = URL(string: urlString)!
+        
+        static func baseURL() -> URL {
+            guard let url = URL(string: urlString) else {
+                preconditionFailure("Endpoint.urlString is not a URL.")
+            }
+            return url
+        }
     }
     
 }

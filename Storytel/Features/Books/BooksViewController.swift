@@ -61,6 +61,7 @@ extension BooksViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.bookTableViewCell, for: indexPath)!
+        #warning("TODO: - ViewModel should pass a model.")
         cell.configure(book: viewModel.books[indexPath.row])
         return cell
     }
